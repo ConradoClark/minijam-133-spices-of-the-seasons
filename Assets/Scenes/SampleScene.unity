@@ -324,6 +324,60 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!1 &162970633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 162970635}
+  - component: {fileID: 162970634}
+  m_Layer: 0
+  m_Name: test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &162970634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162970633}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1447d5b24e234e4aaf5b9e4f9eac6a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <RunOnEnable>k__BackingField: 1
+  <Loop>k__BackingField: 0
+  <TimerReference>k__BackingField: {fileID: 0}
+  <Volume>k__BackingField: {fileID: 775517444}
+  <Seasons>k__BackingField: {fileID: 2100000, guid: e3376f48c493f584eaba4bd1374855bc, type: 2}
+  <Summer>k__BackingField: {fileID: 2100000, guid: cbc59be5a254a424ab462758243fd2fb, type: 2}
+  <Winter>k__BackingField: {fileID: 2100000, guid: 1a0e4cbeb8a1244499b5be6a9860cbe4, type: 2}
+  <Spring>k__BackingField: {fileID: 0}
+  <Fall>k__BackingField: {fileID: 0}
+  <CurrentSeason>k__BackingField: 0
+--- !u!4 &162970635
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162970633}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.47929347, y: 0.22845046, z: -6.19127}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &329074749
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,7 +988,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1a0e4cbeb8a1244499b5be6a9860cbe4, type: 2}
+  - {fileID: 2100000, guid: e3376f48c493f584eaba4bd1374855bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1362,7 +1416,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1a0e4cbeb8a1244499b5be6a9860cbe4, type: 2}
+  - {fileID: 2100000, guid: e3376f48c493f584eaba4bd1374855bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2841,6 +2895,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1885278739}
   - component: {fileID: 1885278740}
+  - component: {fileID: 1885278741}
   m_Layer: 7
   m_Name: ChiliPepper
   m_TagString: Untagged
@@ -2894,6 +2949,18 @@ MonoBehaviour:
   - {fileID: 1499087696}
   - {fileID: 1664173468}
   AdditionalColliders: []
+--- !u!114 &1885278741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885278738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cafa3b86c6714fd419c371c46891c1f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1928344226
 GameObject:
   m_ObjectHideFlags: 0
