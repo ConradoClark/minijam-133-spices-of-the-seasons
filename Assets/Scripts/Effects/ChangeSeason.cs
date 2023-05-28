@@ -50,6 +50,7 @@ public class ChangeSeason : BaseGameRunner
     [field: SerializeField]
     public SpriteRenderer PillarR { get; set; }
 
+    public event Action<Seasons> OnSeasonStartedChanging;
     public event Action<Seasons> OnSeasonChanged;
 
     public struct SeasonColors
@@ -139,11 +140,6 @@ public class ChangeSeason : BaseGameRunner
         _fallColors = GetColorsFromMaterial(Fall);
         _player = _player.FromScene();
         _gameCamera = Camera.main;
-    }
-
-    protected override void OnEnable()
-    {
-        base.OnEnable();
         InitializeSeason();
     }
 
@@ -165,6 +161,7 @@ public class ChangeSeason : BaseGameRunner
 
     private IEnumerable<IEnumerable<Action>> Change(Seasons season)
     {
+        OnSeasonStartedChanging?.Invoke(season);
         var currentColors = GetColorsFromSeason(CurrentSeason);
         Seasons.SetColor("_InitialDarkest", currentColors.DarkestColor);
         Seasons.SetColor("_InitialDark", currentColors.DarkColor);

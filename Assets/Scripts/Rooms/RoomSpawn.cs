@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-public enum GameEvents
+using Licht.Unity.Objects;
+
+public class RoomSpawn : RoomObject
 {
-    OnCollected,
-    OnRoomEnter,
-    OnRoomExit
+    
 }

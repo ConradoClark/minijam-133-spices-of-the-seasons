@@ -1,18 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
+using Licht.Impl.Events;
+using Licht.Unity.Objects;
 using UnityEngine;
 
-public class RoomObject : MonoBehaviour
+public class RoomObject : BaseGameObject
 {
-    // Start is called before the first frame update
-    void Start()
+    public Room Room { get; private set; }
+    protected override void OnAwake()
     {
-        
+        base.OnAwake();
+        Room = GetComponentInParent<Room>(true);
+
+        gameObject.SetActive(Room.Active);
+        Room.OnRoomEnter += OnEnter;
+        Room.OnRoomExit += OnExit;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDestroy()
     {
-        
+        Room.OnRoomEnter -= OnEnter;
+        Room.OnRoomExit -= OnExit;
+    }
+    private void OnExit()
+    {
+        gameObject.SetActive(false);
+    }
+
+    private void OnEnter()
+    {
+        gameObject.SetActive(true);
     }
 }

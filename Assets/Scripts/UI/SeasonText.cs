@@ -26,17 +26,17 @@ public class SeasonText : BaseGameObject
     protected override void OnEnable()
     {
         base.OnEnable();
-        _seasonManager.OnSeasonChanged += OnSeasonChanged;
-        OnSeasonChanged(_seasonManager.CurrentSeason);
+        _seasonManager.OnSeasonStartedChanging += OnSeasonStartedChanging;
+        OnSeasonStartedChanging(_seasonManager.CurrentSeason);
     }
 
     protected override void OnDisable()
     {
         base.OnDisable();
-        _seasonManager.OnSeasonChanged -= OnSeasonChanged;
+        _seasonManager.OnSeasonStartedChanging -= OnSeasonStartedChanging;
     }
 
-    private void OnSeasonChanged(Seasons obj)
+    private void OnSeasonStartedChanging(Seasons obj)
     {
         TextComponent.text = obj.ToString();
 

@@ -32,7 +32,7 @@ public class SeasonIcon : BaseGameObject
     protected override void OnEnable()
     {
         base.OnEnable();
-        _seasonManager.OnSeasonChanged += OnSeasonChanged;
+        _seasonManager.OnSeasonStartedChanging += OnSeasonStartedChanging;
 
         SetActive(_seasonManager.CurrentSeason, true);
     }
@@ -40,10 +40,10 @@ public class SeasonIcon : BaseGameObject
     protected override void OnDisable()
     {
         base.OnDisable();
-        _seasonManager.OnSeasonChanged -= OnSeasonChanged;
+        _seasonManager.OnSeasonStartedChanging -= OnSeasonStartedChanging;
     }
 
-    private void OnSeasonChanged(Seasons obj)
+    private void OnSeasonStartedChanging(Seasons obj)
     {
         var active = Active;
         SetActive(obj);
