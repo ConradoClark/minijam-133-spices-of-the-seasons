@@ -15,16 +15,26 @@ public class Collectable : BaseGameObject
     public bool Collected { get; private set; }
 
     [field: SerializeField]
-    public ScriptValue Reference { get; private set; }
+    public ScriptIdentifier Reference { get; private set; }
 
     private IEventPublisher<GameEvents, OnCollectEventArgs> _eventPublisher;
     public event Action<OnCollectEventArgs> OnCollect;
+    public event Action<bool> OnInit;
+    private CollectablesData _sceneData;
 
     public struct OnCollectEventArgs
     {
         public BaseActor Source { get; set; }
         public Collectable Target { get; set; }
-        public ScriptValue CollectableReference { get; set; }
+        public ScriptIdentifier CollectableReference { get; set; }
+    }
+
+    protected override void OnAwake()
+    {
+        base.OnAwake();
+        _sceneData = SceneObject<SceneCollectionData>.Instance().CollectablesData;
+        Collected = _sceneData.IsCollected(Reference);
+        OnInit?.Invoke(Collected);
     }
 
     protected override void OnEnable()
@@ -50,6 +60,7 @@ public class Collectable : BaseGameObject
             CollectableReference = Reference
         };
 
+        _sceneData.MarkAsCollected(Reference);
         _eventPublisher.PublishEvent(GameEvents.OnCollected, args);
         OnCollect?.Invoke(args);
     }

@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 0
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
@@ -203,7 +203,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 1, z: 1, w: 1}
       outline: []
       physicsShape:
       - - {x: -15.5, y: 15}
@@ -304,7 +304,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 1, z: 1, w: 1}
       outline: []
       physicsShape:
       - - {x: -16, y: 16}
@@ -315,6 +315,27 @@ TextureImporter:
       bones: []
       spriteID: aec0aff1d500bdf45884eccaa80af06d
       internalID: 306569396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicPlatform_8
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 55
+        width: 30
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9598e36d5d438054f8d91f25cfc39f46
+      internalID: 1050505455
       vertices: []
       indices: 
       edges: []
@@ -338,6 +359,7 @@ TextureImporter:
       BasicPlatform_5: 403422070
       BasicPlatform_6: 2045054852
       BasicPlatform_7: 306569396
+      BasicPlatform_8: 1050505455
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

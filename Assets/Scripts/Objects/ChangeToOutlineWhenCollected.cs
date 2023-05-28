@@ -16,18 +16,22 @@ public class ChangeToOutlineWhenCollected : BaseGameObject
 
     private Collectable _collectable;
 
+    
+
     protected override void OnEnable()
     {
         base.OnEnable();
         Actor.TryGetCustomObject(out _collectable);
         _collectable.OnCollect += OnCollect;
-        
+        _collectable.OnInit += OnInit;
+        OnInit(_collectable.Collected);
     }
 
     protected override void OnDisable()
     {
         base.OnDisable();
         _collectable.OnCollect -= OnCollect;
+        _collectable.OnInit -= OnInit;
     }
 
     private void OnCollect(Collectable.OnCollectEventArgs obj)
@@ -36,6 +40,15 @@ public class ChangeToOutlineWhenCollected : BaseGameObject
         foreach (var sprite in SpritesToShow)
         {
             sprite.enabled = true;
+        }
+    }
+
+    private void OnInit(bool collected)
+    {
+        SpriteToHide.enabled = !collected;
+        foreach (var sprite in SpritesToShow)
+        {
+            sprite.enabled = collected;
         }
     }
 }
