@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -972327683, guid: d77e9fe3eb07eea4c8504f0b3c6d0460, type: 3}
+  m_Name: CauldronThrowObject_PO
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 7358263481217732517, guid: 8f31394102828284f87141622c54049b, type: 3}
+  DefaultPoolSize: 30
+  Type: 1

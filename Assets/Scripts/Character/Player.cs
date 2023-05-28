@@ -12,6 +12,9 @@ public class Player: BaseGameObject
     [field:SerializeField] 
     public LichtPlatformerMoveController MoveController { get; private set; }
 
+    [field: SerializeField]
+    public LichtPlatformerJumpController JumpController { get; private set; }
+
     [field:SerializeField]
     public RoomSpawn LatestSpawn { get; set; }
 }
