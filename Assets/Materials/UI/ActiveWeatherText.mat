@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-774834417604616694
+--- !u!114 &-1955161718904670524
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Seasons
-  m_Shader: {fileID: -6465566751694194690, guid: fcf996f1245afba4cac7eed666737457, type: 3}
+  m_Name: ActiveWeatherText
+  m_Shader: {fileID: -6465566751694194690, guid: aebdc72653fcbb44eba956814f738ee1, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -54,18 +54,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _EffectIntensity: 1
-    - _Proportion: 0
-    m_Colors:
-    - _EffectCenter: {r: -5.7309675, g: -2.547282, b: 0, a: 0}
-    - _InitialDark: {r: 0.25098038, g: 0.5058824, b: 0.20392153, a: 1}
-    - _InitialDarkest: {r: 0.15294111, g: 0.27843133, b: 0.101960726, a: 1}
-    - _InitialLight: {r: 0.6156863, g: 1, b: 0.63529414, a: 1}
-    - _InitialLightest: {r: 0.7764706, g: 1, b: 0.827451, a: 1}
-    - _InitialNeutral: {r: 0.29019606, g: 0.75686276, b: 0.22745094, a: 1}
-    - _ReplaceDark: {r: 0.25098038, g: 0.5058824, b: 0.20392153, a: 1}
-    - _ReplaceDarkest: {r: 0.15294111, g: 0.27843133, b: 0.101960726, a: 1}
-    - _ReplaceLight: {r: 0.6156863, g: 1, b: 0.63529414, a: 1}
-    - _ReplaceLightest: {r: 0.7764706, g: 1, b: 0.827451, a: 1}
-    - _ReplaceNeutral: {r: 0.29019606, g: 0.75686276, b: 0.22745094, a: 1}
+    - _Saturation: 1
+    m_Colors: []
   m_BuildTextureStacks: []
