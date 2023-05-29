@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Collection>k__BackingField:
   - Identifier: {fileID: 11400000, guid: 309f13fb7268af74fa81da53312d3fc4, type: 2}
-    Collected: 1
+    Collected: 0
   - Identifier: {fileID: 11400000, guid: d289d6c900bb9b04dbaeac1adbb2ce64, type: 2}
-    Collected: 1
+    Collected: 0
   - Identifier: {fileID: 11400000, guid: d0627f3ca0ce8f74a8437644243d59a3, type: 2}
-    Collected: 1
+    Collected: 0
   - Identifier: {fileID: 11400000, guid: 57c74b3a0ee74354e99110a3ad3460f0, type: 2}
-    Collected: 1
+    Collected: 0
   - Identifier: {fileID: 11400000, guid: b1c06d1beaf83844c81b783bf67ce52f, type: 2}
-    Collected: 1
+    Collected: 0
   - Identifier: {fileID: 11400000, guid: 58d4d287a8b158b43ba3eedc0e87a7a8, type: 2}
-    Collected: 1
+    Collected: 0
   - Identifier: {fileID: 11400000, guid: 69efe17e4baf6204597229a19500b946, type: 2}
-    Collected: 1
+    Collected: 0

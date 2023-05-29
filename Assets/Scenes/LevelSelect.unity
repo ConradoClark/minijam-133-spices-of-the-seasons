@@ -410,7 +410,7 @@ MonoBehaviour:
   Order: 1
   MenuContext: {fileID: 261505574}
   CursorPosition: {x: 0, y: 0}
-  <SceneName>k__BackingField: Tutorial
+  <SceneName>k__BackingField: GarlicCake
 --- !u!114 &153488210
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -30,6 +30,11 @@ public class RespawnOnTouch : BaseGameRunner
             break;
         }
 
+        if (Vector2.Distance(_player.transform.position, Camera.main.transform.position) > 30f)
+        {
+            _player.transform.position = _player.LatestSpawn.transform.position;
+        }
+
         yield return TimeYields.WaitOneFrameX;
     }
 }

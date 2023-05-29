@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 1825545299989097510}
   - component: {fileID: 218563873276248542}
   - component: {fileID: 642665862009000465}
+  - component: {fileID: 754022167041279182}
   m_Layer: 7
   m_Name: Rice#1
   m_TagString: Untagged
@@ -334,6 +335,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fed9a69eb3dde046ba54c94f46d4219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &754022167041279182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2745264432552240700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 752e0468c7241904aa947530d0eeb711, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <OverrideAudioClip>k__BackingField: {fileID: 0}
 --- !u!1 &8282385921219013394
 GameObject:
   m_ObjectHideFlags: 0

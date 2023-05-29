@@ -37,6 +37,7 @@ public class FinishLevel : BaseGameRunner
     private Cauldron _cauldron;
     private bool _finished;
     private WinScreen _winScreen;
+    private SoundManager _soundManager;
 
     protected override void OnAwake()
     {
@@ -46,6 +47,7 @@ public class FinishLevel : BaseGameRunner
         _sceneData = _sceneData.FromScene();
         _cauldron = _cauldron.FromScene(true);
         _winScreen = _winScreen.FromScene(true);
+        _soundManager = _soundManager.FromScene();
     }
 
     protected override IEnumerable<IEnumerable<Action>> Handle()
@@ -78,6 +80,7 @@ public class FinishLevel : BaseGameRunner
                     effects.Add(effect);
                 }
 
+                _soundManager.PlayThrowSound();
                 yield return TimeYields.WaitMilliseconds(GameTimer, Random.Range(200, 400));
             }
 

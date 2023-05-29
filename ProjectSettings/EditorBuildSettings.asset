@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: f11cedb10960b604896e3aaadb7a69ff
+  - enabled: 1
+    path: Assets/Scenes/GarlicCake.unity
+    guid: c424dd3b9f5b29c47a4933d7421266d6
   m_configObjects: {}

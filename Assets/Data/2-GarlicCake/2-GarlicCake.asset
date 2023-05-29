@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ced48f55623596428cd8c542a457dbc, type: 3}
+  m_Name: 2-GarlicCake
+  m_EditorClassIdentifier: 
+  <Collection>k__BackingField:
+  - Identifier: {fileID: 11400000, guid: fa7b6a63aca6ae54fb50b171bc2ded17, type: 2}
+    Collected: 0
+  - Identifier: {fileID: 11400000, guid: 44e431fb967b71c47a359829549d81f3, type: 2}
+    Collected: 0
+  - Identifier: {fileID: 11400000, guid: ff443d957038b424b92f55e7913419f0, type: 2}
+    Collected: 0
+  - Identifier: {fileID: 11400000, guid: 7a27cd7ede5060943a667f4a7b2d83b1, type: 2}
+    Collected: 0
+  - Identifier: {fileID: 11400000, guid: fcc78dbc680dbe749a1207e86fdc5f69, type: 2}
+    Collected: 0
+  - Identifier: {fileID: 11400000, guid: 4063a2d03df9857498ce125579c5fac6, type: 2}
+    Collected: 0
+  - Identifier: {fileID: 11400000, guid: 5116c377fe7ef254aa75579269d05b42, type: 2}
+    Collected: 0
+  - Identifier: {fileID: 11400000, guid: 836d689775c3a174fa55b85410c3454c, type: 2}
+    Collected: 0
