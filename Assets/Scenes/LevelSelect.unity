@@ -704,7 +704,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 261505573}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.538, y: -1.96, z: 0}
+  m_LocalPosition: {x: 2.538, y: -2.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1514,6 +1514,7 @@ GameObject:
   - component: {fileID: 1316195048}
   - component: {fileID: 1316195050}
   - component: {fileID: 1316195049}
+  - component: {fileID: 1316195051}
   m_Layer: 5
   m_Name: Text (TMP) (2)
   m_TagString: Untagged
@@ -1675,6 +1676,20 @@ MeshRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 20
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1316195051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316195047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b01be3356ac3345ac1fea3e0556d70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <TextComponent>k__BackingField: {fileID: 1316195049}
+  <OverrideCollectablesData>k__BackingField: {fileID: 11400000, guid: 339eed22a9c581e4190ffed12317bc0d, type: 2}
 --- !u!1 &1668283452
 GameObject:
   m_ObjectHideFlags: 0
@@ -2174,7 +2189,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1942579666
 Transform:
   m_ObjectHideFlags: 0
@@ -2258,7 +2273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Selected: 0
   Order: 2
-  MenuContext: {fileID: 261505574}
+  MenuContext: {fileID: 0}
   CursorPosition: {x: 0, y: 0}
   <SceneName>k__BackingField: Tutorial
 --- !u!114 &1942579669

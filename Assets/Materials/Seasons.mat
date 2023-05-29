@@ -57,7 +57,7 @@ Material:
     - _EffectIntensity: 1
     - _Proportion: 0
     m_Colors:
-    - _EffectCenter: {r: 32.314198, g: -0.7108438, b: 0, a: 0}
+    - _EffectCenter: {r: 28.997501, g: -2.3657925, b: 0, a: 0}
     - _InitialDark: {r: 0.25098038, g: 0.5058824, b: 0.20392153, a: 1}
     - _InitialDarkest: {r: 0.15294111, g: 0.27843133, b: 0.101960726, a: 1}
     - _InitialLight: {r: 0.6156863, g: 1, b: 0.63529414, a: 1}

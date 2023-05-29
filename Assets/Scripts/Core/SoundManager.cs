@@ -8,6 +8,9 @@ public class SoundManager: BaseGameObject
     public AudioSource CollectAudioSource { get; private set; }
 
     [field: SerializeField]
+    public AudioSource SongAudioSource { get; private set; }
+
+    [field: SerializeField]
     public AudioSource SFXAudioSource { get; private set; }
 
     [field: SerializeField]
@@ -24,6 +27,9 @@ public class SoundManager: BaseGameObject
     public AudioClip DefaultSeasonChangeSound { get; private set; }
     [field: SerializeField]
     public AudioClip DefaultThrowSound { get; private set; }
+
+    [field: SerializeField]
+    public AudioClip GameSong { get; private set; }
 
     public void PlayCollectSound(AudioClip clip)
     {
@@ -52,6 +58,11 @@ public class SoundManager: BaseGameObject
         var clipToPlay = DefaultThrowSound;
         SFXAudioSource.pitch = 0.95f + Random.value * 0.1f;
         SFXAudioSource.PlayOneShot(clipToPlay);
+    }
+
+    public void StopGameSong()
+    {
+        SongAudioSource.Stop();
     }
 
 }

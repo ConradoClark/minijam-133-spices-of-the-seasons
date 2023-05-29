@@ -96,6 +96,7 @@ public class FinishLevel : BaseGameRunner
             _finished = true;
             Debug.Log("ShowWinScreen");
             _winScreen.gameObject.SetActive(true);
+            _soundManager.StopGameSong();
 
             yield return TimeYields.WaitOneFrameX;
 
